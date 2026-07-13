@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="A portfolio of creative digital work." />
+    <title>Nova — Creative Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="social-icons.css" />
+    <link rel="stylesheet" href="project-images.css" />
+    <link rel="stylesheet" href="interactions.css" />
+  </head>
+  <body>
+    <div class="page-glow glow-one"></div>
+    <div class="page-glow glow-two"></div>
+
+    <header class="site-header">
+      <a class="logo" href="#home" aria-label="I S A home" data-full-name="Ibrahim Suliman Ahmed">I<span>·</span>S<span>·</span>A</a>
+      <button class="menu-button" aria-expanded="false" aria-controls="site-nav" aria-label="Open navigation">
+        <span></span><span></span>
+      </button>
+      <nav id="site-nav" class="site-nav">
+        <a href="#home">Home</a>
+        <a href="#projects">Projects</a>
+        <a href="#about">About</a>
+        <a class="nav-contact" href="mailto:hello@nova.dev">Let's talk <span>↗</span></a>
+      </nav>
+    </header>
+
+    <main>
+      <section id="home" class="hero">
+        <p class="eyebrow"><span></span> Available for freelance work</p>
+        <h1>Digital experiences<br />with a <em>human</em> pulse.</h1>
+        <div class="hero-bottom">
+          <p>Hi, I’m Nova — a creative developer crafting memorable brands and web experiences from concept to code.</p>
+          <a class="circle-link" href="#projects" aria-label="See selected work">↓</a>
+        </div>
+      </section>
+
+      <section class="featured" aria-labelledby="featured-title">
+        <div class="section-topline">
+          <p id="featured-title">01 / Featured project</p>
+          <div class="slider-controls">
+            <button class="slider-button previous" aria-label="Previous project">←</button>
+            <button class="slider-button next" aria-label="Next project">→</button>
+          </div>
+        </div>
+
+        <div class="project-slider">
+          <article class="slide active">
+            <div class="featured-art project-image"><img src="assets/playlist-stitcher.png" alt="Playlist Stitcher desktop app" /><span class="art-number">01</span></div>
+            <div class="featured-copy">
+              <div><p class="project-type">Desktop app · Python · Video tools</p><h2>Playlist Stitcher & Merger</h2></div>
+              <a href="https://github.com/" target="_blank" rel="noreferrer">View source <span>↗</span></a>
+            </div>
+          </article>
+          <article class="slide">
+            <div class="featured-art project-image"><img src="assets/precision-clock.png" alt="Precision clock application interface" /><span class="art-number">02</span></div>
+            <div class="featured-copy">
+              <div><p class="project-type">Web app · Interface design · JavaScript</p><h2>Precision Clock</h2></div>
+              <a href="https://github.com/" target="_blank" rel="noreferrer">View source <span>↗</span></a>
+            </div>
+          </article>
+          <article class="slide">
+            <div class="featured-art project-image"><img src="assets/quran-player.png" alt="Quran player web application interface" /><span class="art-number">03</span></div>
+            <div class="featured-copy">
+              <div><p class="project-type">Web app · Arabic interface · Responsive design</p><h2>Quran Player</h2></div>
+              <a href="https://github.com/" target="_blank" rel="noreferrer">View source <span>↗</span></a>
+            </div>
+          </article>
+        </div>
+        <div class="slider-status"><span class="current-slide">01</span><span class="status-line"><i></i></span><span>03</span></div>
+      </section>
+
+      <section id="projects" class="projects" aria-labelledby="projects-title">
+        <div class="projects-heading"><p class="eyebrow"><span></span> Selected work</p><h2 id="projects-title">A few things I’ve<br /><em>made with care.</em></h2></div>
+        <div class="project-grid">
+          <article class="project-card"><div class="card-art project-image"><img src="assets/playlist-stitcher.png" alt="Playlist Stitcher desktop app" /></div><div class="card-info"><div><p>Desktop app · Python</p><h3>Playlist Stitcher & Merger</h3></div><a href="https://github.com/" target="_blank" rel="noreferrer" aria-label="Playlist Stitcher GitHub source">↗</a></div></article>
+          <article class="project-card"><div class="card-art project-image"><img src="assets/precision-clock.png" alt="Precision clock app" /></div><div class="card-info"><div><p>Web app · JavaScript</p><h3>Precision Clock</h3></div><a href="https://github.com/" target="_blank" rel="noreferrer" aria-label="Precision Clock GitHub source">↗</a></div></article>
+          <article class="project-card"><div class="card-art project-image"><img src="assets/quran-player.png" alt="Quran player website" /></div><div class="card-info"><div><p>Web app · Responsive</p><h3>Quran Player</h3></div><a href="https://github.com/" target="_blank" rel="noreferrer" aria-label="Quran Player GitHub source">↗</a></div></article>
+          <article class="project-card"><div class="card-art art-loop"><span>LOOP</span><i>↻</i></div><div class="card-info"><div><p>Interactive site</p><h3>Loop Collective</h3></div><a href="https://github.com/" target="_blank" rel="noreferrer" aria-label="Loop Collective GitHub source">↗</a></div></article>
+        </div>
+      </section>
+
+      <section id="about" class="about"><p>Have a project in mind?</p><a href="mailto:hello@nova.dev">Let’s make it <em>matter.</em> <span>↗</span></a></section>
+    </main>
+
+    <footer><a class="logo" href="#home" aria-label="I S A home" data-full-name="Ibrahim Suliman Ahmed">I<span>·</span>S<span>·</span>A</a><p>© 2024 I.S.A. Built with intention.</p><div class="socials"><a class="icon-link" href="https://github.com/" target="_blank" rel="noreferrer" aria-label="GitHub" title="GitHub"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.18-3.37-1.18-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.61.07-.61 1 .07 1.53 1.04 1.53 1.04.9 1.54 2.35 1.1 2.92.84.09-.65.35-1.1.64-1.35-2.22-.25-4.56-1.11-4.56-4.95 0-1.1.39-2 1.03-2.71-.1-.25-.45-1.28.1-2.67 0 0 .84-.27 2.75 1.03A9.58 9.58 0 0 1 12 6.42c.85 0 1.7.11 2.49.34 1.9-1.3 2.74-1.03 2.74-1.03.55 1.39.2 2.42.1 2.67.64.71 1.03 1.61 1.03 2.71 0 3.85-2.34 4.7-4.57 4.95.36.31.68.9.68 1.81v2.68c0 .26.18.57.69.48A10 10 0 0 0 12 2Z"/></svg></a><a class="icon-link" href="https://linkedin.com/" target="_blank" rel="noreferrer" aria-label="LinkedIn" title="LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5.37 3.5A1.87 1.87 0 1 1 5.36 7a1.87 1.87 0 0 1 .01-3.5ZM3.7 8.4h3.34V20H3.7V8.4ZM9.14 8.4h3.2V10h.05c.45-.85 1.54-1.75 3.17-1.75 3.39 0 4.02 2.23 4.02 5.13V20h-3.33v-5.87c0-1.4-.03-3.2-1.95-3.2-1.95 0-2.25 1.53-2.25 3.1V20H8.72V8.4h.42Z"/></svg></a><a class="icon-link" href="https://indeed.com/" target="_blank" rel="noreferrer" aria-label="Indeed" title="Indeed"><span aria-hidden="true">i</span></a></div></footer>
+    <script src="script.js"></script>
+  </body>
+</html>

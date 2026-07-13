@@ -1,0 +1,10 @@
+.site-nav > a:not(.nav-contact) { position: relative; padding: 6px 0; }
+.site-nav > a:not(.nav-contact)::after { content: ""; position: absolute; right: 0; bottom: 1px; left: 0; height: 1px; background: var(--ink); transform: scaleX(0); transform-origin: right; transition: transform .25s ease; }
+.site-nav > a:not(.nav-contact):hover::after, .site-nav > a:not(.nav-contact):focus-visible::after { transform: scaleX(1); transform-origin: left; }
+
+.logo { transition: letter-spacing .2s ease; }
+.logo:hover { font-size: 0; letter-spacing: 0; }
+.logo:hover span { display: none; }
+.logo:hover::after { content: attr(data-full-name); font-size: 14px; letter-spacing: -.04em; white-space: nowrap; }
+
+@media (max-width: 650px) { .logo:hover::after { font-size: 12px; } }
